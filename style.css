@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(45deg, orangered,blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+}
+
+#logo{
+    padding-left:40px;
+    padding-top:20px;
+    color:white;
+}
+
+.card{
+    height:450px;
+    width:500px;
+    background-color:rgba(0,0,0,0.3);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:10px;
+    box-sizing:border-box;
+    gap:2px;
+    margin-top:10px;
+    border-radius:20px;
+    color:rgba(255,255,255,0.8);
+    transition: all 0.2s ease;
+}
+
+.container{
+    width:500px;
+    margin-top:50px;
+    margin-left:30%;
+    padding:30px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:20px;
+    box-shadow:0 0 70px 0 white;
+    transition: all 0.2s ease;
+}
+
+.container:hover{
+    box-shadow:0 0 10px 0 white;
+}
+
+.weatherForm{
+    display: flex;
+    justify-content:space-between;
+}
+
+.container input{
+    width:85%;
+    height:10px;
+    border:none;
+    padding:20px;
+    border-radius: 20px 0 0 20px;
+    background-color:rgba(0,0,0,0.2);
+    color:rgba(255,255,255,0.7);
+    font-size:20px;
+}
+
+input::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+.container button{
+    width:80px;
+    height:50px;
+    font-size:30px;
+    color:rgba(0,0,0,0.7);
+    border:none;
+    border-radius:0 20px 20px 0;
+    background-color:rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.cityDisplay{
+    font-size:40px;
+}
+
+.tempDisplay{
+    font-size:50px;
+}
+
+.weatherEmoji{
+    font-size:110px;
+    box-shadow:0 0 40px 0 black;
+    border-radius:50%;
+}
+
+.descDisplay{
+    font-size:30px;;
+}
+
+.humidityDisplay{
+    font-size:20px;
+}
+
+.windDisplay{
+    font-size:20px;
+}
+
